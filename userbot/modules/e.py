@@ -15,7 +15,7 @@ from os import remove
 from sys import executable
 
 from userbot import TERM_ALIAS
-from userbot.utils import edit_or_reply, cilik_cmd
+from userbot.utils import cilik_cmd
 
 
 @cilik_cmd(pattern="xx(?: |$|\n)([\\s\\S]*)")
