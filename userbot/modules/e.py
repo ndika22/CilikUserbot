@@ -13,7 +13,7 @@ import traceback
 from getpass import getuser
 from os import remove
 from sys import executable
-
+from userbot.events import register
 from userbot import TERM_ALIAS
 from userbot.utils import cilik_cmd
 
